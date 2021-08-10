@@ -39,6 +39,9 @@ Here is a list of all the default variables for this role, which are also availa
 ice_location: Earth
 ice_admin: icemaster@localhost
 ice_adminuser: admin
+ice_limit_clients: 200
+ice_limit_sources: 2
+ice_port: 8000
 ices2_configfile: "/etc/icecast2/icecast.xml"
 ices2_streamname: Example stream name
 ices2_genre: Example genre
@@ -63,6 +66,9 @@ These variables are required!
     - ice_location: Earth
     - ice_admin: icemaster@localhost
     - ice_adminuser: admin
+    - ice_port: 8080
+    - ice_limit_sources: 30
+    - ice_limit_clients: 1000
   roles:
     - makarenalabs.icecast
 ```
